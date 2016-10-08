@@ -1,6 +1,6 @@
 const initialState = {
     player: 0,
-    oponent: 0
+    opponent: 0
 };
 
 export function outcomes (state = initialState, action) {

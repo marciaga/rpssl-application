@@ -29,11 +29,11 @@ Data Structure:
 {
     selections: {
         player: <str:name>,    
-        oponent: <str:name>
+        opponent: <str:name>
     },
     outcomes: {
         player: <number>,
-        oponent: <number>
+        opponent: <number>
     },
     meta: {
         gameOver: <bool>

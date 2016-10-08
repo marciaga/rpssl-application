@@ -1,8 +1,8 @@
-import { oponentChoice, outcomeGenerator } from './utils';
+import { opponentChoice, outcomeGenerator } from './utils';
 
 const playerSelection = (name) => {
-    const oponent = oponentChoice();
-    const outcome = oponent === name ? 'tie' : outcomeGenerator(name, oponent);
+    const opponent = opponentChoice();
+    const outcome = opponent === name ? 'tie' : outcomeGenerator(name, opponent);
 
     return (dispatch, getState) =>  {
         if (outcome !== 'tie') {
@@ -33,7 +33,7 @@ const playerSelection = (name) => {
             type: 'SELECTION',
             data: {
                 player: name,
-                oponent: oponent
+                opponent: opponent
             }
         });
     };

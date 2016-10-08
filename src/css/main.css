@@ -1,6 +1,44 @@
-h1 {
-    font-family: 'Mate', serif;
-}
 body {
-    background: cornsilk;
+   margin: 0px;
+   padding: 0px;
+   background-color: #ECEFF1;
+}
+
+h1, h2, h3, h4, p {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    background-color: #B0BEC5;
+}
+
+header h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 39px;
+    margin-left: 10px;
+}
+
+.scoreboard h2 {
+    display: inline-block;
+    text-align: center;
+}
+
+.game-token {
+    text-align: center;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+#reset-button {
+    color: #000000;
+    background-color: #FAFAFA;
+}
+
+.outcome span {
+    text-transform: capitalize;
+}
+
+.outcome-statement {
+    text-align: center;
 }

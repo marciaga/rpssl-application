@@ -1,6 +1,6 @@
 import { tokenNames, rulesTable } from './setup';
 
-const oponentChoice = () => {
+const opponentChoice = () => {
     const num = getRandomInt(0, 4);
     return tokenNames[num];
 };
@@ -11,9 +11,9 @@ const getRandomInt = (min, max) => {
     return Math.floor(Math.random() * (max - min)) + min;
 };
 
-const outcomeGenerator = (player, oponent) => {
-    const playerLosingSelections = rulesTable[oponent];
-    return playerLosingSelections.indexOf(player) > -1 ? 'oponent' : 'player';
+const outcomeGenerator = (player, opponent) => {
+    const playerLosingSelections = rulesTable[opponent];
+    return playerLosingSelections.indexOf(player) > -1 ? 'opponent' : 'player';
 };
 
-export { oponentChoice, outcomeGenerator };
+export { opponentChoice, outcomeGenerator };

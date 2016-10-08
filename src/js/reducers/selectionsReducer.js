@@ -5,7 +5,7 @@ export function selections (state = initialState, action) {
         case 'SELECTION':
             return Object.assign({}, state, {
                 player: action.data.player,
-                oponent: action.data.oponent
+                opponent: action.data.opponent
             });
         case 'RESET_SELECTIONS':
             return initialState;

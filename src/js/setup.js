@@ -23,4 +23,12 @@ const rulesTable = {
     spock: ['rock', 'scissors']
 };
 
-export { tokenNames, rulesTable };
+const colorMapping = [
+    '#D1C4E9',
+    '#B3E5FC',
+    '#FFCCBC',
+    '#D7CCC8',
+    '#FFCDD2'
+];
+
+export { tokenNames, rulesTable, colorMapping };
