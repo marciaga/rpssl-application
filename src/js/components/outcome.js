@@ -1,4 +1,9 @@
 import React from 'react';
+/**
+ * component that returns game outcome
+ * @param winner - string of winer
+ * @param selections - an object with player and opponent selections
+ */
 
 const GameOutcome = ({ winner, selections }) => {
     const { player, opponent } = selections;
@@ -16,8 +21,12 @@ const GameOutcome = ({ winner, selections }) => {
 
     return (
         <div className="mdl-grid">
-            <h3 className="outcome mdl-cell mdl-cell--4-col mdl-cell--2-offset-desktop">Player Chose: <span>{player}</span></h3>
-            <h3 className="outcome mdl-cell mdl-cell--4-col">Opponent Chose: <span>{opponent}</span></h3>
+            <h3 className="outcome mdl-cell mdl-cell--4-col mdl-cell--2-offset-desktop">
+                Player Chose: <span>{player}</span>
+            </h3>
+            <h3 className="outcome mdl-cell mdl-cell--4-col">
+                Opponent Chose: <span>{opponent}</span>
+            </h3>
             <div className="outcome-statement mdl-cell mdl-cell--12-col">
                 {renderOutcomeText(winner)}
             </div>

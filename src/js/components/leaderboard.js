@@ -8,8 +8,12 @@ const LeaderBoard = ({ scores, dispatch }) => {
     return (
         <div>
             <div className="mdl-grid">
-                <h2 className="score mdl-cell mdl-cell--4-col mdl-cell--2-offset-desktop mdl-cell--4-col-phone">Your score: {player}</h2>
-                <h2 className="score mdl-cell mdl-cell--4-col mdl-cell--4-col-phone">Opponent score: {opponent}</h2>
+                <h2 className="score mdl-cell mdl-cell--4-col mdl-cell--2-offset-desktop mdl-cell--4-col-phone">
+                    Your score: {player}
+                </h2>
+                <h2 className="score mdl-cell mdl-cell--4-col mdl-cell--4-col-phone">
+                    Opponent score: {opponent}
+                </h2>
             </div>
             <div className="mdl-grid">
                 <button id="reset-button"

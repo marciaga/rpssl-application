@@ -1,4 +1,3 @@
-// this require isn't pretty
 require('../css/main.css');
 
 import React from 'react';
@@ -9,12 +8,13 @@ import thunk from 'redux-thunk';
 
 import reducer from './reducers';
 import Container from './components/container';
-
+// use composed middlewares for development only
 const middlewares = compose(
     applyMiddleware(thunk),
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
-const store = createStore(reducer, middlewares); 
+// create store with middlewares for development only
+const store = createStore(reducer, applyMiddleware(thunk));
 
 render(
     <Provider store={store}>

@@ -34,12 +34,17 @@ class Container extends Component {
         return (
             <div>
                 <header>
-                    <h1 className="">Rock, Paper, Scissors, Spock, Lizard</h1>
+                    <h1>Rock, Paper, Scissors, Spock, Lizard</h1>
                 </header>
                 <LeaderBoard scores={outcomes} dispatch={dispatch} />
                 <div className="mdl-grid">
                     {tokenNames.map((v, i) => {
-                        return <GameToken name={v} key={i} index={i} dispatch={dispatch} />;
+                        return <GameToken
+                                    name={v}
+                                    key={i}
+                                    index={i}
+                                    dispatch={dispatch}
+                                />;
                     })}
                 </div>
                 {this.renderOutcome(meta, selections)}

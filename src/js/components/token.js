@@ -6,6 +6,7 @@ import { colorMapping } from '../setup';
  * component that returns game tokens
  * @param name - string of token name
  * @param dispatch - to dispatch actions
+ * @param index - number used to map background colors
  */
 const GameToken = ({ name, dispatch, index }) => {
     const column = index === 0 ? 'mdl-cell--1-offset' : '';
