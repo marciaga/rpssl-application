@@ -1,10 +1,10 @@
 {
-  "name": "react-build",
+  "name": "rpssl-application",
   "version": "1.0.0",
-  "description": "React static site building boilerplate",
+  "description": "React with Redux application",
   "repository": {
     "type": "git",
-    "url": "https://github.com/marciaga/react-build"
+    "url": "https://github.com/marciaga/rpssl-application"
   },
   "main": "index.js",
   "scripts": {

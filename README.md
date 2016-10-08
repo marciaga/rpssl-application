@@ -1,4 +1,5 @@
 # Rock, Paper, Scissors, Spock, Lizard
+[![Build Status](https://semaphoreci.com/api/v1/marciaga/rpssl-application/branches/master/badge.svg)](https://semaphoreci.com/marciaga/rpssl-application)
 
 To run this application locally:
 
