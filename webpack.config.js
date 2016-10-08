@@ -10,7 +10,7 @@ var plugins = [
   new webpack.NoErrorsPlugin(),
   new ExtractTextPlugin('[name].css'),
   new CleanWebpackPlugin(['build'], {
-   'exclude': ['index.html'],
+   'exclude': ['index.html', 'favicon.ico'],
    root: process.cwd()
   })
 ];
