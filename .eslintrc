@@ -1,0 +1,43 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "rules": {
+        "curly": 2,
+        "comma-dangle": [2, "never"],
+        "comma-spacing": 2,
+        "eol-last": 2,
+        "eqeqeq": [2, "allow-null"],
+        "dot-location": [2, "property"],
+        "no-dupe-keys": 2,
+        "no-undef": 2,
+        "no-unused-expressions": 2,
+        "quotes": [2, "single"],
+        "semi": [2, "always"]
+    },
+    "ecmaFeatures": {
+        "arrowFunctions": 2,
+        "blockBindings": 2,
+        "jsx": true,
+        "modules": true,
+        "classes": true
+    },
+    "react": {
+        "jsx-curly-spacing": 2,
+        "jsx-max-props-per-line": [2, {"maximum": 4}],
+        "jsx-no-duplicate-props": 2,
+        "jsx-no-undef": 2,
+        "jsx-quotes": [2, "prefer-double"],
+        "jsx-uses-react": true,
+        "jsx-uses-vars": true,
+    }
+}
