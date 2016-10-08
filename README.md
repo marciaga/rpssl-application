@@ -25,6 +25,8 @@ To build the application for production, use
 
 The build process generates static files in the build directory.
 
+The deploy process: for CI we use Semaphore. All merges to the master branch trigger the build and deploy process. The build server runs the tests, then if the tests pass, the application is deployed to an AWS S3 bucket.
+
 Data Structure:
 ```
 {
